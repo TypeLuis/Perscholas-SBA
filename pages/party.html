@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/party.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/modal.css">
+    <script defer src="../scripts/party.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="./schedule.html">Schedule</a>
+        <a style="height: 100%;" href="./index.html">
+            <img style="height: 90%;" src="../images/logo.png" alt="Watch Party">
+        </a>
+        <a href="./party.html">Create a party!</a>
+    </nav>
+
+    <main>
+        <h2>Create a Party!</h2>
+        <form action="">
+            <input type="text" placeholder="Name" required>
+            <input type="date" required>
+            <input type="time" required>
+            <select name="select" required>
+                <option value="" selected disabled hidden>Select an Anime</option>
+                <option value="One Piece">One Piece</option>
+                <option value="Jujutsu Kaisen">Jujutsu Kaisen</option>
+                <option value="Vinland Saga">Vinland Saga</option>
+                <option value="Attack on Titan">Attack on Titan</option>
+                <option value="Naruto">Naruto</option>
+                <option value="YuYu Hakusho">YuYu Hakusho</option>
+            </select>
+            <input type="number" placeholder="Episode #" required>
+            <input type="submit" value="submit">
+    
+            <span id="modal_button">Party Rules</span>
+        </form>
+    </main>
+
+    <section id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+      
+    </section>
+    <footer>
+        <a href="./resume.html">Get to know me</a>
+    </footer>
+</body>
+</html>

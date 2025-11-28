@@ -1,0 +1,38 @@
+main{
+    height: calc(100vh - 7em); /* all view height minus nav bar height and footer height + margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-inline: 2em;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+td, th{
+    width: 20%;
+    background-color: #41264f;
+    /* word-wrap: break-word; */
+    /* white-space: normal; */
+}
+
+table, th, td{
+    border: 2px solid #540020;
+    text-align: center;
+    padding: 1em;
+}
+
+
+@media screen and (max-width: 500px) {
+    main{
+        margin-inline: 1em;
+    }
+    table, th, td{
+        padding : .5em;
+        font-size: .9em;
+    }
+}
