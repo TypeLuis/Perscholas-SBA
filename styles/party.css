@@ -44,16 +44,3 @@ form{
     }
 }
 
-#modal_button{
-    font-size: x-large;
-    cursor: pointer;
-    transition: 0.2s ease;
-
-    &:hover{
-        color: #603875;
-    }
-
-    &:active{
-        transform: scale(.9);
-    }
-}
