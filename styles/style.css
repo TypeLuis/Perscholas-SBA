@@ -32,6 +32,10 @@ main div{
     justify-content: center;
     align-items: center;
     gap: 2em;
+
+    & img{
+        max-width: 80vw;
+    }
 }
 
 form{
@@ -65,5 +69,16 @@ form{
 
     &:active {
         transform: scale(0.9);
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    main div{
+        flex-direction: column;
+    }
+
+    h1{
+        text-align: center;
     }
 }
