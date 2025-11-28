@@ -69,6 +69,16 @@ footer{
 }
 
 
+@media (hover: none) and (pointer: coarse) and (max-width: 780px) {
+    /* When media has the properties of a phone */
+    nav a, footer a {
+        &::before{
+            display: none;
+        }
+    }
+}
+
+
 @media screen and (max-width: 600px) {
     nav a {
         font-size: 1em;
