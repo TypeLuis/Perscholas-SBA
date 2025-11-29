@@ -8,15 +8,13 @@ const cell_data = data => {
     return td
 }
 
+
 parties.forEach((obj) => {
-    const table_row = document.createElement('tr')
-    console.log(obj)
-    table_row.appendChild(cell_data(obj.selection))    
-    table_row.appendChild(cell_data(`EP ${obj.episode}`))    
-    table_row.appendChild(cell_data(obj.date))    
-    table_row.appendChild(cell_data(obj.time))    
-    table_row.appendChild(cell_data(obj.name))    
+    const tr = document.createElement('tr')
+    Object.keys(obj).forEach((key) => {
+        const value = key === "episode" ? `EP ${obj[key]}` : obj[key]
+        tr.appendChild(cell_data(value))
+    }) 
 
-
-    table_body.appendChild(table_row);
+    table_body.appendChild(tr);
 })
